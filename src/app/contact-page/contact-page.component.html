@@ -1,0 +1,27 @@
+
+<div>
+    <div class="content-box" >
+        <h3>Send Owner email</h3>
+        <div>
+            <label>
+                Your email:
+                <input name="email" [(ngModel)] = "email" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Your Message:
+                <textarea 
+                name="message" 
+                rows="5"
+                cols="20"
+                [(ngModel)] = "message"
+                ></textarea>
+            </label>
+        </div>
+    </div>
+    <button (click)="sendMessage()">Send</button>
+    <p> </p>
+    <button routerLink="/listings/{{listing?.id}}">Back</button>
+
+</div>
